@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  background-color: rgb(123, 137, 151);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+.container {
+  background-color: pink;
+  padding: 20px;
+  margin: 10px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: solid 2px black;
+  border-radius: 10px;
+}
+
+.input {
+  border: none;
+  font-size: 24px;
+  outline: none;
+  background-color: transparent;
+  letter-spacing: 4px;
+}
+
+.input::placeholder {
+  letter-spacing: 0px;
+}
+
+.btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.fa-copy {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.fa-copy:hover {
+  opacity: 0.7;
+}
+
+.alert-container {
+  position: fixed;
+  height: 40px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 20px;
+  bottom: 20px;
+  background-color: lightgreen;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.4s;
+  font-size: 20px;
+}
+
+.active.alert-container {
+  right: -330px;
+}
